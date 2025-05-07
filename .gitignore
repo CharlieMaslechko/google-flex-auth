@@ -1,0 +1,46 @@
+# Node
+node_modules/
+.pnpm-store/
+
+# Builds
+dist/
+coverage/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# IDE/editor
+.vscode/
+.idea/
+.DS_Store
+
+# Example/test apps
+example/
+test/
+
+# System
+.env*
+*.local
+*.swp
+
+# TypeScript
+*.d.ts.map
+
+# macOS/Linux temp files
+*.sublime-workspace
+*.sublime-project
+*.tmp
+*~
+
+# VSCode project settings
+.vscode/
+
+# JetBrains
+*.iml
+.idea/
+
+# Prettier
+.prettier-cache/

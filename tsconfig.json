@@ -15,6 +15,6 @@
       "allowSyntheticDefaultImports": true,
       "sourceMap": true
     },
-    "include": ["src/**/*"],
+    "include": ["src/**/*", "tests/mocks/MockedGoogleFlexAuthProvider.tsx"],
     "exclude": ["node_modules", "dist", "example"]
   }

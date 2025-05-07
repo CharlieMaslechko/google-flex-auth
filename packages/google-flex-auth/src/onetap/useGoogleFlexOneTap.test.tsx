@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react';
 import { beforeEach, expect, vi, describe, it } from 'vitest';
 import { useGoogleFlexOneTap } from './useGoogleFlexOneTap';
-import MockedProvider from '../../tests/mocks/MockedGoogleFlexAuthProvider'; // Assuming you put MockedProvider in a __mocks__ folder
+import MockedProvider from '../tests/mocks/MockedGoogleFlexAuthProvider'; // Assuming you put MockedProvider in a __mocks__ folder
 import { ScriptLoadError } from '../core/errors';
 
 describe('useGoogleFlexOneTap', () => {

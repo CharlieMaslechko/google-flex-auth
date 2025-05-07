@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GoogleFlexAuthContext } from '../../src/core/context/GoogleFlexAuthProvider';
+import { GoogleFlexAuthContext } from '../../core/context/GoogleFlexAuthProvider';
 
 interface MockedProviderProps {
   clientId: string;

@@ -1,57 +1,15 @@
 {
-  "name": "google-flex-auth",
+  "name": "google-flex-auth-monorepo",
+  "private": true,
   "version": "1.0.0",
-  "description": "Lightweight Google Sign-In hook with optional One Tap support for React.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "files": [
-    "dist"
-  ],
+  "packageManager": "pnpm@8.9.2",
   "scripts": {
-    "build": "tsc",
-    "test": "vitest",
-    "dev": "vite",
-    "prepublishOnly": "pnpm build"
-  },
-  "keywords": [
-    "react",
-    "google",
-    "auth",
-    "signin",
-    "id-token",
-    "onetap",
-    "google-identity"
-  ],
-  "author": "",
-  "license": "MIT",
-  "packageManager": "pnpm@10.7.1",
-  "peerDependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "dev": "pnpm --filter example dev",
+    "build": "pnpm --filter google-flex-auth build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test"
   },
   "devDependencies": {
-    "@eslint/js": "^9.26.0",
-    "@testing-library/react": "^16.3.0",
-    "@types/google.accounts": "^0.0.15",
-    "@types/jsdom": "^21.1.7",
-    "@types/node": "^22.15.15",
-    "@types/react": "^19.1.3",
-    "@types/react-dom": "^19.1.3",
-    "eslint": "^9.26.0",
-    "eslint-config-prettier": "^10.1.3",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.1.0",
-    "jsdom": "^26.1.0",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.32.0",
-    "vite": "^6.3.5",
-    "vitest": "^3.1.3"
+    "typescript": "^5.3.3"
   }
 }
